@@ -1,0 +1,679 @@
+{
+  "dataset_id": "recondesk-demo-v1",
+  "generator": "scripts/generate_demo.py",
+  "notes": [
+    "truth_pairs are genuine counterparts used for measurement; the system must not assert them when the rules abstain.",
+    "unresolvable_groups have duplicate reference and amount; the true pairing is not asserted and they are excluded from recall.",
+    "conflicting_reference, same_amount_unrelated_ref and shared_ref_amount_differs rows have no counterpart in truth."
+  ],
+  "row_categories": {
+    "bank": {
+      "B0001": "clean_pair",
+      "B0002": "clean_pair",
+      "B0003": "clean_pair",
+      "B0004": "clean_pair",
+      "B0005": "clean_pair",
+      "B0006": "clean_pair",
+      "B0007": "clean_pair",
+      "B0008": "clean_pair",
+      "B0009": "clean_pair",
+      "B0010": "clean_pair",
+      "B0011": "clean_pair",
+      "B0012": "clean_pair",
+      "B0013": "clean_pair",
+      "B0014": "clean_pair",
+      "B0015": "clean_pair",
+      "B0016": "clean_pair",
+      "B0017": "clean_pair",
+      "B0018": "clean_pair",
+      "B0019": "clean_pair",
+      "B0020": "clean_pair",
+      "B0021": "clean_pair",
+      "B0022": "clean_pair",
+      "B0023": "clean_pair",
+      "B0024": "clean_pair",
+      "B0025": "clean_pair",
+      "B0026": "clean_pair",
+      "B0027": "clean_pair",
+      "B0028": "clean_pair",
+      "B0029": "clean_pair",
+      "B0030": "clean_pair",
+      "B0031": "clean_pair",
+      "B0032": "clean_pair",
+      "B0033": "clean_pair",
+      "B0034": "clean_pair",
+      "B0035": "clean_pair",
+      "B0036": "clean_pair",
+      "B0037": "clean_pair",
+      "B0038": "clean_pair",
+      "B0039": "clean_pair",
+      "B0040": "clean_pair",
+      "B0041": "clean_pair",
+      "B0042": "clean_pair",
+      "B0043": "clean_pair",
+      "B0044": "clean_pair",
+      "B0045": "clean_pair",
+      "B0046": "delayed_in_window",
+      "B0047": "delayed_in_window",
+      "B0048": "delayed_in_window",
+      "B0049": "delayed_in_window",
+      "B0050": "delayed_in_window",
+      "B0051": "delayed_in_window",
+      "B0052": "delayed_in_window",
+      "B0053": "delayed_in_window",
+      "B0054": "delayed_in_window",
+      "B0055": "delayed_in_window",
+      "B0056": "delayed_in_window",
+      "B0057": "delayed_in_window",
+      "B0058": "delayed_in_window",
+      "B0059": "delayed_in_window",
+      "B0060": "delayed_in_window",
+      "B0061": "delayed_outside_window",
+      "B0062": "delayed_outside_window",
+      "B0063": "delayed_outside_window",
+      "B0064": "delayed_outside_window",
+      "B0065": "delayed_outside_window",
+      "B0066": "delayed_outside_window",
+      "B0067": "empty_reference_pair",
+      "B0068": "empty_reference_pair",
+      "B0069": "empty_reference_pair",
+      "B0070": "empty_reference_pair",
+      "B0071": "empty_reference_pair",
+      "B0072": "empty_reference_pair",
+      "B0073": "duplicate_reference_amount",
+      "B0074": "duplicate_reference_amount",
+      "B0075": "duplicate_reference_amount",
+      "B0076": "duplicate_reference_amount",
+      "B0077": "conflicting_reference",
+      "B0078": "conflicting_reference",
+      "B0079": "conflicting_reference",
+      "B0080": "conflicting_reference",
+      "B0081": "conflicting_reference",
+      "B0082": "same_amount_unrelated_ref",
+      "B0083": "same_amount_unrelated_ref",
+      "B0084": "same_amount_unrelated_ref",
+      "B0085": "same_amount_unrelated_ref",
+      "B0086": "same_amount_unrelated_ref",
+      "B0087": "shared_ref_amount_differs",
+      "B0088": "shared_ref_amount_differs",
+      "B0089": "shared_ref_amount_differs",
+      "B0090": "shared_ref_amount_differs",
+      "B0091": "bank_only",
+      "B0092": "bank_only",
+      "B0093": "bank_only",
+      "B0094": "bank_only",
+      "B0095": "bank_only",
+      "B0096": "bank_only",
+      "B0097": "bank_only",
+      "B0098": "bank_only",
+      "B0099": "bank_only",
+      "B0100": "bank_only"
+    },
+    "ledger": {
+      "L0001": "clean_pair",
+      "L0002": "clean_pair",
+      "L0003": "clean_pair",
+      "L0004": "clean_pair",
+      "L0005": "clean_pair",
+      "L0006": "clean_pair",
+      "L0007": "clean_pair",
+      "L0008": "clean_pair",
+      "L0009": "clean_pair",
+      "L0010": "clean_pair",
+      "L0011": "clean_pair",
+      "L0012": "clean_pair",
+      "L0013": "clean_pair",
+      "L0014": "clean_pair",
+      "L0015": "clean_pair",
+      "L0016": "clean_pair",
+      "L0017": "clean_pair",
+      "L0018": "clean_pair",
+      "L0019": "clean_pair",
+      "L0020": "clean_pair",
+      "L0021": "clean_pair",
+      "L0022": "clean_pair",
+      "L0023": "clean_pair",
+      "L0024": "clean_pair",
+      "L0025": "clean_pair",
+      "L0026": "clean_pair",
+      "L0027": "clean_pair",
+      "L0028": "clean_pair",
+      "L0029": "clean_pair",
+      "L0030": "clean_pair",
+      "L0031": "clean_pair",
+      "L0032": "clean_pair",
+      "L0033": "clean_pair",
+      "L0034": "clean_pair",
+      "L0035": "clean_pair",
+      "L0036": "clean_pair",
+      "L0037": "clean_pair",
+      "L0038": "clean_pair",
+      "L0039": "clean_pair",
+      "L0040": "clean_pair",
+      "L0041": "clean_pair",
+      "L0042": "clean_pair",
+      "L0043": "clean_pair",
+      "L0044": "clean_pair",
+      "L0045": "clean_pair",
+      "L0046": "delayed_in_window",
+      "L0047": "delayed_in_window",
+      "L0048": "delayed_in_window",
+      "L0049": "delayed_in_window",
+      "L0050": "delayed_in_window",
+      "L0051": "delayed_in_window",
+      "L0052": "delayed_in_window",
+      "L0053": "delayed_in_window",
+      "L0054": "delayed_in_window",
+      "L0055": "delayed_in_window",
+      "L0056": "delayed_in_window",
+      "L0057": "delayed_in_window",
+      "L0058": "delayed_in_window",
+      "L0059": "delayed_in_window",
+      "L0060": "delayed_in_window",
+      "L0061": "delayed_outside_window",
+      "L0062": "delayed_outside_window",
+      "L0063": "delayed_outside_window",
+      "L0064": "delayed_outside_window",
+      "L0065": "delayed_outside_window",
+      "L0066": "delayed_outside_window",
+      "L0067": "empty_reference_pair",
+      "L0068": "empty_reference_pair",
+      "L0069": "empty_reference_pair",
+      "L0070": "empty_reference_pair",
+      "L0071": "empty_reference_pair",
+      "L0072": "empty_reference_pair",
+      "L0073": "duplicate_reference_amount",
+      "L0074": "duplicate_reference_amount",
+      "L0075": "duplicate_reference_amount",
+      "L0076": "duplicate_reference_amount",
+      "L0077": "conflicting_reference",
+      "L0078": "conflicting_reference",
+      "L0079": "conflicting_reference",
+      "L0080": "conflicting_reference",
+      "L0081": "conflicting_reference",
+      "L0082": "same_amount_unrelated_ref",
+      "L0083": "same_amount_unrelated_ref",
+      "L0084": "same_amount_unrelated_ref",
+      "L0085": "same_amount_unrelated_ref",
+      "L0086": "same_amount_unrelated_ref",
+      "L0087": "shared_ref_amount_differs",
+      "L0088": "shared_ref_amount_differs",
+      "L0089": "shared_ref_amount_differs",
+      "L0090": "shared_ref_amount_differs",
+      "L0091": "ledger_only",
+      "L0092": "ledger_only",
+      "L0093": "ledger_only",
+      "L0094": "ledger_only",
+      "L0095": "ledger_only",
+      "L0096": "ledger_only",
+      "L0097": "ledger_only",
+      "L0098": "ledger_only",
+      "L0099": "ledger_only",
+      "L0100": "ledger_only"
+    }
+  },
+  "row_counts": {
+    "bank": 100,
+    "ledger": 100
+  },
+  "seed": 20261103,
+  "synthetic": true,
+  "truth_pairs": [
+    {
+      "bank_id": "B0001",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0001"
+    },
+    {
+      "bank_id": "B0002",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0002"
+    },
+    {
+      "bank_id": "B0003",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0003"
+    },
+    {
+      "bank_id": "B0004",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0004"
+    },
+    {
+      "bank_id": "B0005",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0005"
+    },
+    {
+      "bank_id": "B0006",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0006"
+    },
+    {
+      "bank_id": "B0007",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0007"
+    },
+    {
+      "bank_id": "B0008",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0008"
+    },
+    {
+      "bank_id": "B0009",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0009"
+    },
+    {
+      "bank_id": "B0010",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0010"
+    },
+    {
+      "bank_id": "B0011",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0011"
+    },
+    {
+      "bank_id": "B0012",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0012"
+    },
+    {
+      "bank_id": "B0013",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0013"
+    },
+    {
+      "bank_id": "B0014",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0014"
+    },
+    {
+      "bank_id": "B0015",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0015"
+    },
+    {
+      "bank_id": "B0016",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0016"
+    },
+    {
+      "bank_id": "B0017",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0017"
+    },
+    {
+      "bank_id": "B0018",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0018"
+    },
+    {
+      "bank_id": "B0019",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0019"
+    },
+    {
+      "bank_id": "B0020",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0020"
+    },
+    {
+      "bank_id": "B0021",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0021"
+    },
+    {
+      "bank_id": "B0022",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0022"
+    },
+    {
+      "bank_id": "B0023",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0023"
+    },
+    {
+      "bank_id": "B0024",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0024"
+    },
+    {
+      "bank_id": "B0025",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0025"
+    },
+    {
+      "bank_id": "B0026",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0026"
+    },
+    {
+      "bank_id": "B0027",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0027"
+    },
+    {
+      "bank_id": "B0028",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0028"
+    },
+    {
+      "bank_id": "B0029",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0029"
+    },
+    {
+      "bank_id": "B0030",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0030"
+    },
+    {
+      "bank_id": "B0031",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0031"
+    },
+    {
+      "bank_id": "B0032",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0032"
+    },
+    {
+      "bank_id": "B0033",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0033"
+    },
+    {
+      "bank_id": "B0034",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0034"
+    },
+    {
+      "bank_id": "B0035",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0035"
+    },
+    {
+      "bank_id": "B0036",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0036"
+    },
+    {
+      "bank_id": "B0037",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0037"
+    },
+    {
+      "bank_id": "B0038",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0038"
+    },
+    {
+      "bank_id": "B0039",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0039"
+    },
+    {
+      "bank_id": "B0040",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0040"
+    },
+    {
+      "bank_id": "B0041",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0041"
+    },
+    {
+      "bank_id": "B0042",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0042"
+    },
+    {
+      "bank_id": "B0043",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0043"
+    },
+    {
+      "bank_id": "B0044",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0044"
+    },
+    {
+      "bank_id": "B0045",
+      "category": "clean_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0045"
+    },
+    {
+      "bank_id": "B0046",
+      "category": "delayed_in_window",
+      "ledger_day_offset": -2,
+      "ledger_id": "L0046"
+    },
+    {
+      "bank_id": "B0047",
+      "category": "delayed_in_window",
+      "ledger_day_offset": -1,
+      "ledger_id": "L0047"
+    },
+    {
+      "bank_id": "B0048",
+      "category": "delayed_in_window",
+      "ledger_day_offset": -2,
+      "ledger_id": "L0048"
+    },
+    {
+      "bank_id": "B0049",
+      "category": "delayed_in_window",
+      "ledger_day_offset": -1,
+      "ledger_id": "L0049"
+    },
+    {
+      "bank_id": "B0050",
+      "category": "delayed_in_window",
+      "ledger_day_offset": -1,
+      "ledger_id": "L0050"
+    },
+    {
+      "bank_id": "B0051",
+      "category": "delayed_in_window",
+      "ledger_day_offset": -2,
+      "ledger_id": "L0051"
+    },
+    {
+      "bank_id": "B0052",
+      "category": "delayed_in_window",
+      "ledger_day_offset": 2,
+      "ledger_id": "L0052"
+    },
+    {
+      "bank_id": "B0053",
+      "category": "delayed_in_window",
+      "ledger_day_offset": -1,
+      "ledger_id": "L0053"
+    },
+    {
+      "bank_id": "B0054",
+      "category": "delayed_in_window",
+      "ledger_day_offset": 1,
+      "ledger_id": "L0054"
+    },
+    {
+      "bank_id": "B0055",
+      "category": "delayed_in_window",
+      "ledger_day_offset": -1,
+      "ledger_id": "L0055"
+    },
+    {
+      "bank_id": "B0056",
+      "category": "delayed_in_window",
+      "ledger_day_offset": -1,
+      "ledger_id": "L0056"
+    },
+    {
+      "bank_id": "B0057",
+      "category": "delayed_in_window",
+      "ledger_day_offset": -1,
+      "ledger_id": "L0057"
+    },
+    {
+      "bank_id": "B0058",
+      "category": "delayed_in_window",
+      "ledger_day_offset": -1,
+      "ledger_id": "L0058"
+    },
+    {
+      "bank_id": "B0059",
+      "category": "delayed_in_window",
+      "ledger_day_offset": -2,
+      "ledger_id": "L0059"
+    },
+    {
+      "bank_id": "B0060",
+      "category": "delayed_in_window",
+      "ledger_day_offset": -2,
+      "ledger_id": "L0060"
+    },
+    {
+      "bank_id": "B0061",
+      "category": "delayed_outside_window",
+      "ledger_day_offset": -4,
+      "ledger_id": "L0061"
+    },
+    {
+      "bank_id": "B0062",
+      "category": "delayed_outside_window",
+      "ledger_day_offset": 4,
+      "ledger_id": "L0062"
+    },
+    {
+      "bank_id": "B0063",
+      "category": "delayed_outside_window",
+      "ledger_day_offset": -3,
+      "ledger_id": "L0063"
+    },
+    {
+      "bank_id": "B0064",
+      "category": "delayed_outside_window",
+      "ledger_day_offset": -4,
+      "ledger_id": "L0064"
+    },
+    {
+      "bank_id": "B0065",
+      "category": "delayed_outside_window",
+      "ledger_day_offset": 3,
+      "ledger_id": "L0065"
+    },
+    {
+      "bank_id": "B0066",
+      "category": "delayed_outside_window",
+      "ledger_day_offset": -3,
+      "ledger_id": "L0066"
+    },
+    {
+      "bank_id": "B0067",
+      "category": "empty_reference_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0067"
+    },
+    {
+      "bank_id": "B0068",
+      "category": "empty_reference_pair",
+      "ledger_day_offset": 1,
+      "ledger_id": "L0068"
+    },
+    {
+      "bank_id": "B0069",
+      "category": "empty_reference_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0069"
+    },
+    {
+      "bank_id": "B0070",
+      "category": "empty_reference_pair",
+      "ledger_day_offset": 1,
+      "ledger_id": "L0070"
+    },
+    {
+      "bank_id": "B0071",
+      "category": "empty_reference_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0071"
+    },
+    {
+      "bank_id": "B0072",
+      "category": "empty_reference_pair",
+      "ledger_day_offset": 0,
+      "ledger_id": "L0072"
+    }
+  ],
+  "unresolvable_groups": [
+    {
+      "bank_ids": [
+        "B0073",
+        "B0074"
+      ],
+      "category": "duplicate_reference_amount",
+      "ledger_ids": [
+        "L0073",
+        "L0074"
+      ]
+    },
+    {
+      "bank_ids": [
+        "B0075",
+        "B0076"
+      ],
+      "category": "duplicate_reference_amount",
+      "ledger_ids": [
+        "L0075",
+        "L0076"
+      ]
+    }
+  ]
+}

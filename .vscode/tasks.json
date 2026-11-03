@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ReconDesk: start app",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe -m streamlit run app.py --server.address 127.0.0.1 --server.port 8502",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "ReconDesk: tests",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/Scripts/python.exe -m pytest -q",
+      "group": { "kind": "test", "isDefault": true },
+      "problemMatcher": []
+    }
+  ]
+}

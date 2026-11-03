@@ -1,0 +1,4 @@
+# Data fixtures are compared byte-for-byte and hashed: never convert their line endings.
+*.csv -text
+data/demo/*.json -text
+tests/fixtures/*.json -text
