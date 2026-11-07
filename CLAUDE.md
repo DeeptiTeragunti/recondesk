@@ -39,4 +39,4 @@ Local reconciliation exception workbench for a portfolio demo. Two fixed-schema 
 - `data/demo/` synthetic inputs and `truth_manifest.json`
 - `tests/` pytest suite
 - `docs/EVAL_REPORT.md` generated measurements
-- `PLAN.md`, `README.md`, `DEMO_SCRIPT.md`
+- `PLAN.md`, `README.md` (short overview), `docs/DETAILS.md` (full reference), `DEMO_SCRIPT.md`
